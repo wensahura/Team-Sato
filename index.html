@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script type="text/javascript" src="p5.js">
+    </script>
+  <title>Random</title>
+</head>
+<body>
+  <script>
+    function setup(){
+      createCanvas(700,500);
+    }
+    function draw(){
+      background(0,255,0);
+      for (var i=10; i<780; i=i+10){
+        var randomYpos=random(20,100);
+        ellipse(i,randomYpos,20,20);
+      }
+    }
+  </script>
+</body>
+</html>
